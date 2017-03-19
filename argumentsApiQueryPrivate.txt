@@ -1,0 +1,19 @@
+
+
+def send_query_conditional(type,price):
+    
+    k = krakenex.API()
+    k.load_key('kraken.key')
+    k.query_private('AddOrder', {'pair': 'XXBTZEUR',
+                                 'type': 'buy',
+                                 'ordertype': 'limit',
+                                 'price': '938.75',
+                                 'volume': '0.05',
+                                 'leverage': '5'
+                             }
+
+'close[pair]': 'XXBTZEUR'
+'close[type]': 'sell'
+'close[ordertype]': 'limit'
+'close[price]': '9001'
+'close[volume]': '1'

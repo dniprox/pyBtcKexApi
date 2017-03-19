@@ -1,0 +1,16 @@
+#!/usr/bin/env python2
+import sys
+import krakenex
+import json
+
+def send_query(entries):
+    
+    k = krakenex.API()
+    return k.query_public('Depth', {'pair': 'XXBTZEUR','count':entries})
+
+
+number_of_entries=1
+
+json_query_string=send_query(number_of_entries)
+    
+print json.dumps(json_query_string, sort_keys=True, indent=4, separators=(',',': '))
