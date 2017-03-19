@@ -1,7 +1,0 @@
-
-
-'close[pair]': 'XXBTZEUR',
-'close[type]': 'sell',
-'close[ordertype]': 'limit',
-'close[price]': '9001',
-'close[volume]': '1'})
