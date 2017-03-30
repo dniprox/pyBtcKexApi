@@ -22,8 +22,8 @@ query_string=send_query()
 if query_string != -1:
     dictResult=query_string['result']
     dictError=query_string['error']
-    print "Amount of Euros :  ",dictResult['ZEUR']
-    print "Amount of BTC   :  ",dictResult['XXBT']
+    print "Amount in Euros :  ",dictResult['ZEUR']
+    print "Amount in BTC   :  ",dictResult['XXBT']
 else:
     print "Error querying API"
 
