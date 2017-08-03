@@ -9,10 +9,12 @@ def send_query():
     try:
         k = krakenex.API()
     except Exception:
+        print "Fault initiating API"
         return -1;
     try:
         k.load_key('kraken.key')
     except Exception:
+        print "Credential could not be found"
         return -1;
     
     return k.query_private('Balance')
